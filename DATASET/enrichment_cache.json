@@ -1,0 +1,2585 @@
+{
+  "103.216.15.12": {
+    "timestamp": 1763270478903,
+    "data": {
+      "source_ip": "103.216.15.12",
+      "enrichment": {
+        "geolocation": {
+          "country": "Unknown",
+          "city": "Unknown",
+          "isp": "Unknown",
+          "organization": "Unknown",
+          "asn": "",
+          "coordinates": {
+            "lat": 0,
+            "lon": 0
+          },
+          "timezone": "Unknown",
+          "is_eu": false,
+          "sources": [],
+          "conflicts": [],
+          "usage_type": null,
+          "domain": null,
+          "is_tor": false
+        },
+        "threat_intelligence": {
+          "abuse_score": 0,
+          "reputation": 0,
+          "total_reports": 0,
+          "num_distinct_users": 0,
+          "last_reported_at": null,
+          "vt_detections": 0,
+          "vt_total": 0,
+          "vt_ratio": 0,
+          "pulse_count": 0,
+          "malware_families": [],
+          "adversaries": [],
+          "shodan_tags": [],
+          "greynoise_classification": null,
+          "greynoise_tags": [],
+          "open_ports": [],
+          "services": [],
+          "vulnerabilities": [],
+          "cves": [],
+          "historical_attacks": [],
+          "pulse_references": [],
+          "is_known_threat": false
+        },
+        "port_analysis": {
+          "port": 17616,
+          "is_sensitive_port": false,
+          "port_category": "Registered",
+          "port_type": "Other",
+          "risk_level": "LOW-MEDIUM",
+          "is_common": false,
+          "description": "Registered port - may indicate custom application"
+        },
+        "temporal_analysis": {
+          "hour": 6,
+          "day_of_week": 2,
+          "is_suspicious_hour": false,
+          "is_business_hour": false,
+          "is_weekend": false,
+          "is_off_hours": true,
+          "is_unusual_pattern": true,
+          "weekday_anomaly": true,
+          "weekend_anomaly": false,
+          "days_since": 900,
+          "temporal_risk_factors": [
+            "ANOMALY: Unusually early weekday activity (6:00 UTC)",
+            "Off-hours activity detected (6:00 UTC)",
+            "Unusual temporal pattern detected",
+            "Very old timestamp (900 days ago)",
+            "CRITICAL: Multiple temporal anomalies detected (3 patterns)"
+          ],
+          "risk_score_adjustment": 21
+        },
+        "usage_analysis": {
+          "usage_type": null,
+          "domain": null,
+          "hostnames": [],
+          "is_suspicious_usage": false,
+          "is_suspicious_domain": false,
+          "is_tor": false,
+          "is_datacenter": false,
+          "is_vpn_proxy": false,
+          "usage_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "geographic_anomalies": {
+          "is_high_risk_country": false,
+          "impossible_travel_detected": false,
+          "vpn_proxy_detected": false,
+          "geographic_anomalies": [],
+          "risk_score_adjustment": 0
+        },
+        "connection_analysis": {
+          "protocol": "ICMP",
+          "port": 17616,
+          "is_common_protocol": true,
+          "is_encrypted": false,
+          "protocol_port_match": true,
+          "connection_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "log_security_analysis": {
+          "anomaly_score": 28.67,
+          "attack_type": "Malware",
+          "attack_signature": "Known Pattern B",
+          "severity_level": "Low",
+          "malware_detected": true,
+          "proxy_detected": true,
+          "proxy_info": "150.9.97.135",
+          "high_anomaly": false,
+          "critical_attack": false,
+          "security_risk_factors": [
+            "Malware Attack: Malware",
+            "Attack Signature: Known Pattern B",
+            "Severity: Low",
+            "Proxy Detected: 150.9.97.135"
+          ],
+          "risk_score_adjustment": 53
+        },
+        "risk_assessment": {
+          "risk_score": 74,
+          "threat_level": "HIGH",
+          "risk_factors": [
+            "ANOMALY: Unusually early weekday activity (6:00 UTC)",
+            "Off-hours activity detected (6:00 UTC)",
+            "Unusual temporal pattern detected",
+            "Very old timestamp (900 days ago)",
+            "CRITICAL: Multiple temporal anomalies detected (3 patterns)",
+            "Malware Attack: Malware",
+            "Attack Signature: Known Pattern B",
+            "Severity: Low",
+            "Proxy Detected: 150.9.97.135"
+          ],
+          "risk_factors_count": 9
+        }
+      },
+      "ai_summary": "Source IP: 103.216.15.12\nDestination IP: 84.9.164.252\nPort: 17616\nProtocol: ICMP\nTimestamp: 2023-05-30 06:33:58\n\nTime-based Analysis:\n  Time: Tuesday at 6:00 UTC\n  ⚠️  OFF-HOURS: Activity outside business hours\n  ⚠️  UNUSUAL PATTERN: Unusual temporal pattern detected\n  ⚠️  WEEKDAY ANOMALY: Unusual weekday activity pattern\n  Days since event: 900\n\n  Temporal Risk Factors:\n    • ANOMALY: Unusually early weekday activity (6:00 UTC)\n    • Off-hours activity detected (6:00 UTC)\n    • Unusual temporal pattern detected\n    • Very old timestamp (900 days ago)\n    • CRITICAL: Multiple temporal anomalies detected (3 patterns)\nProtocol: ICMP\n\nSecurity Indicators from Log:\n  Anomaly Score: 28.67\n  Attack Type: Malware\n  Attack Signature: Known Pattern B\n  Severity Level: LOW\n  ⚠️⚠️⚠️  CRITICAL: MALWARE INDICATORS DETECTED!\n  Proxy Detected: 150.9.97.135\n\n  Security Risk Factors:\n    • Malware Attack: Malware\n    • Attack Signature: Known Pattern B\n    • Severity: Low\n    • Proxy Detected: 150.9.97.135\n\nPort Analysis:\n  Port: 17616\n  Service: Other\n  Category: Registered\n  Risk Level: LOW-MEDIUM\n  Description: Registered port - may indicate custom application\n\nOverall Threat Level: HIGH (Risk Score: 74/100)\n\nKey Risk Factors:\n  • ANOMALY: Unusually early weekday activity (6:00 UTC)\n  • Off-hours activity detected (6:00 UTC)\n  • Unusual temporal pattern detected\n  • Very old timestamp (900 days ago)\n  • CRITICAL: Multiple temporal anomalies detected (3 patterns)\n  ... and 4 more",
+      "source_data": {
+        "query_status": "no_result",
+        "data": [
+          {
+            "source_ip": "Unknown",
+            "destination_ip": "Unknown",
+            "destination_port": "",
+            "protocol": "UNKNOWN",
+            "timestamp": "Unknown",
+            "country": "Unknown",
+            "city": "Unknown",
+            "isp": "Unknown",
+            "abuse_score": null,
+            "otx_pulses": null,
+            "anomaly_score": null,
+            "attack_type": "",
+            "severity_level": "",
+            "risk_score": 2,
+            "threat_level": "LOW",
+            "risk_factors": [
+              "Unknown protocol"
+            ],
+            "gpt_verdict": "",
+            "gpt_confidence": null,
+            "gpt_threat_level": "",
+            "gemini_verdict": "",
+            "gemini_confidence": null,
+            "gemini_agreement": "",
+            "final_verdict": "",
+            "final_confidence": null,
+            "final_threat_level": "",
+            "final_recommended_action": "",
+            "final_reasoning": "",
+            "enrichment": {
+              "geolocation": {
+                "country": "Unknown",
+                "city": "Unknown",
+                "isp": "Unknown",
+                "organization": "Unknown",
+                "asn": "",
+                "coordinates": {
+                  "lat": 0,
+                  "lon": 0
+                },
+                "timezone": "Unknown",
+                "is_eu": false,
+                "sources": [],
+                "conflicts": [],
+                "usage_type": null,
+                "domain": null,
+                "is_tor": false
+              },
+              "threat_intelligence": {
+                "abuse_score": 0,
+                "reputation": 0,
+                "total_reports": 0,
+                "num_distinct_users": 0,
+                "last_reported_at": null,
+                "vt_detections": 0,
+                "vt_total": 0,
+                "vt_ratio": 0,
+                "pulse_count": 0,
+                "malware_families": [],
+                "adversaries": [],
+                "shodan_tags": [],
+                "greynoise_classification": null,
+                "greynoise_tags": [],
+                "open_ports": [],
+                "services": [],
+                "vulnerabilities": [],
+                "cves": [],
+                "historical_attacks": [],
+                "pulse_references": [],
+                "is_known_threat": false
+              },
+              "port_analysis": {
+                "port": null,
+                "is_sensitive_port": false,
+                "port_category": "Unknown",
+                "risk_level": "LOW",
+                "is_common": false,
+                "port_type": "Unknown",
+                "description": "Port not specified or invalid"
+              },
+              "temporal_analysis": {
+                "hour": null,
+                "day_of_week": null,
+                "is_suspicious_hour": false,
+                "is_business_hour": false,
+                "is_weekend": false,
+                "is_off_hours": false,
+                "is_unusual_pattern": false,
+                "weekday_anomaly": false,
+                "weekend_anomaly": false,
+                "days_since": null,
+                "temporal_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "usage_analysis": {
+                "usage_type": null,
+                "domain": null,
+                "hostnames": [],
+                "is_suspicious_usage": false,
+                "is_suspicious_domain": false,
+                "is_tor": false,
+                "is_datacenter": false,
+                "is_vpn_proxy": false,
+                "usage_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "geographic_anomalies": {
+                "is_high_risk_country": false,
+                "impossible_travel_detected": false,
+                "vpn_proxy_detected": false,
+                "geographic_anomalies": [],
+                "risk_score_adjustment": 0
+              },
+              "connection_analysis": {
+                "protocol": "UNKNOWN",
+                "port": null,
+                "is_common_protocol": false,
+                "is_encrypted": false,
+                "protocol_port_match": true,
+                "connection_risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_score_adjustment": 2
+              },
+              "log_security_analysis": {
+                "anomaly_score": null,
+                "attack_type": null,
+                "attack_signature": null,
+                "severity_level": null,
+                "malware_detected": false,
+                "proxy_detected": false,
+                "proxy_info": null,
+                "high_anomaly": false,
+                "critical_attack": false,
+                "security_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "risk_assessment": {
+                "risk_score": 2,
+                "threat_level": "LOW",
+                "risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_factors_count": 1
+              }
+            },
+            "source_data": {
+              "content": {
+                "parts": [
+                  {
+                    "text": "```json\n{\n  \"agreement\": false,\n  \"verdict\": \"TRUE_POSITIVE\",\n  \"confidence\": 100,\n  \"threat_level\": \"HIGH\",\n  \"recommended_action\": \"BLOCK\",\n  \"reasoning\": \"The complete lack of identifiable information (Source IP, Destination IP, Port, and Protocol all unknown) represents a critical security blind spot, not just an 'unknown protocol.' This extreme level of obfuscation or data loss prevents any security analysis and could mask malicious activity or indicate a severe monitoring system failure. Such an event should be classified as high risk to warrant immediate investigation and blocking until clarity is achieved.\"\n}\n```"
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0,
+              "source_ip": "Unknown",
+              "dest_ip": "Unknown",
+              "port": null,
+              "timestamp": "Unknown",
+              "protocol": "UNKNOWN",
+              "source_data": {},
+              "enrichment": {
+                "geolocation": {
+                  "country": "Unknown",
+                  "city": "Unknown",
+                  "isp": "Unknown",
+                  "organization": "Unknown",
+                  "asn": "",
+                  "coordinates": {
+                    "lat": 0,
+                    "lon": 0
+                  },
+                  "timezone": "Unknown",
+                  "is_eu": false,
+                  "sources": [],
+                  "conflicts": [],
+                  "usage_type": null,
+                  "domain": null,
+                  "is_tor": false
+                },
+                "threat_intelligence": {
+                  "abuse_score": 0,
+                  "reputation": 0,
+                  "total_reports": 0,
+                  "num_distinct_users": 0,
+                  "last_reported_at": null,
+                  "vt_detections": 0,
+                  "vt_total": 0,
+                  "vt_ratio": 0,
+                  "pulse_count": 0,
+                  "malware_families": [],
+                  "adversaries": [],
+                  "shodan_tags": [],
+                  "greynoise_classification": null,
+                  "greynoise_tags": [],
+                  "open_ports": [],
+                  "services": [],
+                  "vulnerabilities": [],
+                  "cves": [],
+                  "historical_attacks": [],
+                  "pulse_references": [],
+                  "is_known_threat": false
+                },
+                "port_analysis": {
+                  "port": null,
+                  "is_sensitive_port": false,
+                  "port_category": "Unknown",
+                  "risk_level": "LOW",
+                  "is_common": false,
+                  "port_type": "Unknown",
+                  "description": "Port not specified or invalid"
+                },
+                "temporal_analysis": {
+                  "hour": null,
+                  "day_of_week": null,
+                  "is_suspicious_hour": false,
+                  "is_business_hour": false,
+                  "is_weekend": false,
+                  "is_off_hours": false,
+                  "is_unusual_pattern": false,
+                  "weekday_anomaly": false,
+                  "weekend_anomaly": false,
+                  "days_since": null,
+                  "temporal_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "usage_analysis": {
+                  "usage_type": null,
+                  "domain": null,
+                  "hostnames": [],
+                  "is_suspicious_usage": false,
+                  "is_suspicious_domain": false,
+                  "is_tor": false,
+                  "is_datacenter": false,
+                  "is_vpn_proxy": false,
+                  "usage_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "geographic_anomalies": {
+                  "is_high_risk_country": false,
+                  "impossible_travel_detected": false,
+                  "vpn_proxy_detected": false,
+                  "geographic_anomalies": [],
+                  "risk_score_adjustment": 0
+                },
+                "connection_analysis": {
+                  "protocol": "UNKNOWN",
+                  "port": null,
+                  "is_common_protocol": false,
+                  "is_encrypted": false,
+                  "protocol_port_match": true,
+                  "connection_risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_score_adjustment": 2
+                },
+                "log_security_analysis": {
+                  "anomaly_score": null,
+                  "attack_type": null,
+                  "attack_signature": null,
+                  "severity_level": null,
+                  "malware_detected": false,
+                  "proxy_detected": false,
+                  "proxy_info": null,
+                  "high_anomaly": false,
+                  "critical_attack": false,
+                  "security_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "risk_assessment": {
+                  "risk_score": 2,
+                  "threat_level": "LOW",
+                  "risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_factors_count": 1
+                }
+              },
+              "ai_summary": "Source IP: Unknown\nDestination IP: Unknown\nPort: Unknown\nProtocol: UNKNOWN\nProtocol: UNKNOWN\n\nOverall Threat Level: LOW (Risk Score: 2/100)\n\nKey Risk Factors:\n  • Unknown protocol",
+              "_cache_stats": {
+                "new_entries": 0,
+                "skipped": 0,
+                "errors": 1
+              },
+              "_cache_updated": false,
+              "filename": "enrichment_cache.json"
+            }
+          }
+        ],
+        "Timestamp": "2023-05-30 06:33:58",
+        "Source IP Address": "103.216.15.12",
+        "Destination IP Address": "84.9.164.252",
+        "Source Port": "31225",
+        "Destination Port": "17616",
+        "Protocol": "ICMP",
+        "Packet Length": "503",
+        "Packet Type": "Data",
+        "Traffic Type": "HTTP",
+        "Payload Data": "Qui natus odio asperiores nam. Optio nobis iusto accusamus ad perferendis esse at. Asperiores neque at ad.\nMaiores possimus ipsum saepe vitae. Ad possimus veritatis.",
+        "Malware Indicators": "IoC Detected",
+        "Anomaly Scores": "28.67",
+        "Attack Type": "Malware",
+        "Attack Signature": "Known Pattern B",
+        "Action Taken": "Logged",
+        "Severity Level": "Low",
+        "User Information": "Reyansh Dugal",
+        "Device Information": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.2; Trident/5.0)",
+        "Network Segment": "Segment A",
+        "Geo-location Data": "Jamshedpur, Sikkim",
+        "Proxy Information": "150.9.97.135",
+        "Firewall Logs": "Log Data",
+        "Log Source": "Server",
+        "ip": "103.216.15.12",
+        "continent_code": "AS",
+        "continent_name": "Asia",
+        "country_code2": "CN",
+        "country_code3": "CHN",
+        "country_name": "China",
+        "country_name_official": "People’s Republic of China",
+        "country_capital": "Beijing",
+        "state_prov": "Beijing",
+        "state_code": "CN-BJ",
+        "district": "",
+        "city": "Beijing",
+        "zipcode": "100005",
+        "latitude": "39.90500",
+        "longitude": "116.40530",
+        "is_eu": false,
+        "country_flag": "https://ipgeolocation.io/static/flags/cn_64.png",
+        "geoname_id": "10173159",
+        "country_emoji": "🇨🇳",
+        "calling_code": "+86",
+        "country_tld": ".cn",
+        "languages": "zh-CN,yue,wuu,dta,ug,za",
+        "isp": "Forest Eternal Communication Tech. co.ltd",
+        "connection_type": "",
+        "organization": "Forest Eternal Communication Tech. co.ltd",
+        "currency": {
+          "code": "CNY",
+          "name": "Yuan Renminbi",
+          "symbol": "¥"
+        },
+        "time_zone": {
+          "name": "Asia/Shanghai",
+          "offset": 8,
+          "offset_with_dst": 8,
+          "current_time": "2025-11-16 13:19:39.047+0800",
+          "current_time_unix": 1763270379.047,
+          "current_tz_abbreviation": "CST",
+          "current_tz_full_name": "China Standard Time",
+          "standard_tz_abbreviation": "CST",
+          "standard_tz_full_name": "China Standard Time",
+          "is_dst": false,
+          "dst_savings": 0,
+          "dst_exists": false,
+          "dst_tz_abbreviation": "",
+          "dst_tz_full_name": "",
+          "dst_start": "",
+          "dst_end": ""
+        },
+        "cache_hit": false,
+        "cache_reason": "Not found",
+        "source_ip": "103.216.15.12"
+      }
+    }
+  },
+  "78.199.217.198": {
+    "timestamp": 1763270478904,
+    "data": {
+      "source_ip": "78.199.217.198",
+      "enrichment": {
+        "geolocation": {
+          "country": "Unknown",
+          "city": "Unknown",
+          "isp": "Unknown",
+          "organization": "Unknown",
+          "asn": "",
+          "coordinates": {
+            "lat": 0,
+            "lon": 0
+          },
+          "timezone": "Unknown",
+          "is_eu": false,
+          "sources": [],
+          "conflicts": [],
+          "usage_type": null,
+          "domain": null,
+          "is_tor": false
+        },
+        "threat_intelligence": {
+          "abuse_score": 0,
+          "reputation": 0,
+          "total_reports": 0,
+          "num_distinct_users": 0,
+          "last_reported_at": null,
+          "vt_detections": 0,
+          "vt_total": 0,
+          "vt_ratio": 0,
+          "pulse_count": 0,
+          "malware_families": [],
+          "adversaries": [],
+          "shodan_tags": [],
+          "greynoise_classification": null,
+          "greynoise_tags": [],
+          "open_ports": [],
+          "services": [],
+          "vulnerabilities": [],
+          "cves": [],
+          "historical_attacks": [],
+          "pulse_references": [],
+          "is_known_threat": false
+        },
+        "port_analysis": {
+          "port": 48166,
+          "is_sensitive_port": false,
+          "port_category": "Registered",
+          "port_type": "Other",
+          "risk_level": "LOW-MEDIUM",
+          "is_common": false,
+          "description": "Registered port - may indicate custom application"
+        },
+        "temporal_analysis": {
+          "hour": 7,
+          "day_of_week": 3,
+          "is_suspicious_hour": false,
+          "is_business_hour": false,
+          "is_weekend": false,
+          "is_off_hours": true,
+          "is_unusual_pattern": false,
+          "weekday_anomaly": false,
+          "weekend_anomaly": false,
+          "days_since": 1907,
+          "temporal_risk_factors": [
+            "Off-hours activity detected (7:00 UTC)",
+            "Very old timestamp (1907 days ago)"
+          ],
+          "risk_score_adjustment": 3
+        },
+        "usage_analysis": {
+          "usage_type": null,
+          "domain": null,
+          "hostnames": [],
+          "is_suspicious_usage": false,
+          "is_suspicious_domain": false,
+          "is_tor": false,
+          "is_datacenter": false,
+          "is_vpn_proxy": false,
+          "usage_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "geographic_anomalies": {
+          "is_high_risk_country": false,
+          "impossible_travel_detected": false,
+          "vpn_proxy_detected": false,
+          "geographic_anomalies": [],
+          "risk_score_adjustment": 0
+        },
+        "connection_analysis": {
+          "protocol": "ICMP",
+          "port": 48166,
+          "is_common_protocol": true,
+          "is_encrypted": false,
+          "protocol_port_match": true,
+          "connection_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "log_security_analysis": {
+          "anomaly_score": 51.5,
+          "attack_type": "Malware",
+          "attack_signature": "Known Pattern A",
+          "severity_level": "Low",
+          "malware_detected": true,
+          "proxy_detected": false,
+          "proxy_info": null,
+          "high_anomaly": false,
+          "critical_attack": false,
+          "security_risk_factors": [
+            "MEDIUM: Elevated anomaly score (51.50)",
+            "Malware Attack: Malware",
+            "Attack Signature: Known Pattern A",
+            "Severity: Low",
+            "Action: BLOCKED (threat was blocked)"
+          ],
+          "risk_score_adjustment": 53
+        },
+        "risk_assessment": {
+          "risk_score": 70,
+          "threat_level": "HIGH",
+          "risk_factors": [
+            "Off-hours activity detected (7:00 UTC)",
+            "Very old timestamp (1907 days ago)",
+            "MEDIUM: Elevated anomaly score (51.50)",
+            "Malware Attack: Malware",
+            "Attack Signature: Known Pattern A",
+            "Severity: Low",
+            "Action: BLOCKED (threat was blocked)"
+          ],
+          "risk_factors_count": 7
+        }
+      },
+      "ai_summary": "Source IP: 78.199.217.198\nDestination IP: 66.191.137.154\nPort: 48166\nProtocol: ICMP\nTimestamp: 2020-08-26 07:08:30\n\nTime-based Analysis:\n  Time: Wednesday at 7:00 UTC\n  ⚠️  OFF-HOURS: Activity outside business hours\n  Days since event: 1907\n\n  Temporal Risk Factors:\n    • Off-hours activity detected (7:00 UTC)\n    • Very old timestamp (1907 days ago)\nProtocol: ICMP\n\nSecurity Indicators from Log:\n  Anomaly Score: 51.50\n  Attack Type: Malware\n  Attack Signature: Known Pattern A\n  Severity Level: LOW\n  ⚠️⚠️⚠️  CRITICAL: MALWARE INDICATORS DETECTED!\n\n  Security Risk Factors:\n    • MEDIUM: Elevated anomaly score (51.50)\n    • Malware Attack: Malware\n    • Attack Signature: Known Pattern A\n    • Severity: Low\n    • Action: BLOCKED (threat was blocked)\n\nPort Analysis:\n  Port: 48166\n  Service: Other\n  Category: Registered\n  Risk Level: LOW-MEDIUM\n  Description: Registered port - may indicate custom application\n\nOverall Threat Level: HIGH (Risk Score: 70/100)\n\nKey Risk Factors:\n  • Off-hours activity detected (7:00 UTC)\n  • Very old timestamp (1907 days ago)\n  • MEDIUM: Elevated anomaly score (51.50)\n  • Malware Attack: Malware\n  • Attack Signature: Known Pattern A\n  ... and 2 more",
+      "source_data": {
+        "query_status": "no_result",
+        "data": [
+          {
+            "source_ip": "Unknown",
+            "destination_ip": "Unknown",
+            "destination_port": "",
+            "protocol": "UNKNOWN",
+            "timestamp": "Unknown",
+            "country": "Unknown",
+            "city": "Unknown",
+            "isp": "Unknown",
+            "abuse_score": null,
+            "otx_pulses": null,
+            "anomaly_score": null,
+            "attack_type": "",
+            "severity_level": "",
+            "risk_score": 2,
+            "threat_level": "LOW",
+            "risk_factors": [
+              "Unknown protocol"
+            ],
+            "gpt_verdict": "",
+            "gpt_confidence": null,
+            "gpt_threat_level": "",
+            "gemini_verdict": "",
+            "gemini_confidence": null,
+            "gemini_agreement": "",
+            "final_verdict": "",
+            "final_confidence": null,
+            "final_threat_level": "",
+            "final_recommended_action": "",
+            "final_reasoning": "",
+            "enrichment": {
+              "geolocation": {
+                "country": "Unknown",
+                "city": "Unknown",
+                "isp": "Unknown",
+                "organization": "Unknown",
+                "asn": "",
+                "coordinates": {
+                  "lat": 0,
+                  "lon": 0
+                },
+                "timezone": "Unknown",
+                "is_eu": false,
+                "sources": [],
+                "conflicts": [],
+                "usage_type": null,
+                "domain": null,
+                "is_tor": false
+              },
+              "threat_intelligence": {
+                "abuse_score": 0,
+                "reputation": 0,
+                "total_reports": 0,
+                "num_distinct_users": 0,
+                "last_reported_at": null,
+                "vt_detections": 0,
+                "vt_total": 0,
+                "vt_ratio": 0,
+                "pulse_count": 0,
+                "malware_families": [],
+                "adversaries": [],
+                "shodan_tags": [],
+                "greynoise_classification": null,
+                "greynoise_tags": [],
+                "open_ports": [],
+                "services": [],
+                "vulnerabilities": [],
+                "cves": [],
+                "historical_attacks": [],
+                "pulse_references": [],
+                "is_known_threat": false
+              },
+              "port_analysis": {
+                "port": null,
+                "is_sensitive_port": false,
+                "port_category": "Unknown",
+                "risk_level": "LOW",
+                "is_common": false,
+                "port_type": "Unknown",
+                "description": "Port not specified or invalid"
+              },
+              "temporal_analysis": {
+                "hour": null,
+                "day_of_week": null,
+                "is_suspicious_hour": false,
+                "is_business_hour": false,
+                "is_weekend": false,
+                "is_off_hours": false,
+                "is_unusual_pattern": false,
+                "weekday_anomaly": false,
+                "weekend_anomaly": false,
+                "days_since": null,
+                "temporal_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "usage_analysis": {
+                "usage_type": null,
+                "domain": null,
+                "hostnames": [],
+                "is_suspicious_usage": false,
+                "is_suspicious_domain": false,
+                "is_tor": false,
+                "is_datacenter": false,
+                "is_vpn_proxy": false,
+                "usage_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "geographic_anomalies": {
+                "is_high_risk_country": false,
+                "impossible_travel_detected": false,
+                "vpn_proxy_detected": false,
+                "geographic_anomalies": [],
+                "risk_score_adjustment": 0
+              },
+              "connection_analysis": {
+                "protocol": "UNKNOWN",
+                "port": null,
+                "is_common_protocol": false,
+                "is_encrypted": false,
+                "protocol_port_match": true,
+                "connection_risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_score_adjustment": 2
+              },
+              "log_security_analysis": {
+                "anomaly_score": null,
+                "attack_type": null,
+                "attack_signature": null,
+                "severity_level": null,
+                "malware_detected": false,
+                "proxy_detected": false,
+                "proxy_info": null,
+                "high_anomaly": false,
+                "critical_attack": false,
+                "security_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "risk_assessment": {
+                "risk_score": 2,
+                "threat_level": "LOW",
+                "risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_factors_count": 1
+              }
+            },
+            "source_data": {
+              "content": {
+                "parts": [
+                  {
+                    "text": "```json\n{\n  \"agreement\": false,\n  \"verdict\": \"TRUE_POSITIVE\",\n  \"confidence\": 100,\n  \"threat_level\": \"HIGH\",\n  \"recommended_action\": \"BLOCK\",\n  \"reasoning\": \"The complete lack of identifiable information (Source IP, Destination IP, Port, and Protocol all unknown) represents a critical security blind spot, not just an 'unknown protocol.' This extreme level of obfuscation or data loss prevents any security analysis and could mask malicious activity or indicate a severe monitoring system failure. Such an event should be classified as high risk to warrant immediate investigation and blocking until clarity is achieved.\"\n}\n```"
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0,
+              "source_ip": "Unknown",
+              "dest_ip": "Unknown",
+              "port": null,
+              "timestamp": "Unknown",
+              "protocol": "UNKNOWN",
+              "source_data": {},
+              "enrichment": {
+                "geolocation": {
+                  "country": "Unknown",
+                  "city": "Unknown",
+                  "isp": "Unknown",
+                  "organization": "Unknown",
+                  "asn": "",
+                  "coordinates": {
+                    "lat": 0,
+                    "lon": 0
+                  },
+                  "timezone": "Unknown",
+                  "is_eu": false,
+                  "sources": [],
+                  "conflicts": [],
+                  "usage_type": null,
+                  "domain": null,
+                  "is_tor": false
+                },
+                "threat_intelligence": {
+                  "abuse_score": 0,
+                  "reputation": 0,
+                  "total_reports": 0,
+                  "num_distinct_users": 0,
+                  "last_reported_at": null,
+                  "vt_detections": 0,
+                  "vt_total": 0,
+                  "vt_ratio": 0,
+                  "pulse_count": 0,
+                  "malware_families": [],
+                  "adversaries": [],
+                  "shodan_tags": [],
+                  "greynoise_classification": null,
+                  "greynoise_tags": [],
+                  "open_ports": [],
+                  "services": [],
+                  "vulnerabilities": [],
+                  "cves": [],
+                  "historical_attacks": [],
+                  "pulse_references": [],
+                  "is_known_threat": false
+                },
+                "port_analysis": {
+                  "port": null,
+                  "is_sensitive_port": false,
+                  "port_category": "Unknown",
+                  "risk_level": "LOW",
+                  "is_common": false,
+                  "port_type": "Unknown",
+                  "description": "Port not specified or invalid"
+                },
+                "temporal_analysis": {
+                  "hour": null,
+                  "day_of_week": null,
+                  "is_suspicious_hour": false,
+                  "is_business_hour": false,
+                  "is_weekend": false,
+                  "is_off_hours": false,
+                  "is_unusual_pattern": false,
+                  "weekday_anomaly": false,
+                  "weekend_anomaly": false,
+                  "days_since": null,
+                  "temporal_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "usage_analysis": {
+                  "usage_type": null,
+                  "domain": null,
+                  "hostnames": [],
+                  "is_suspicious_usage": false,
+                  "is_suspicious_domain": false,
+                  "is_tor": false,
+                  "is_datacenter": false,
+                  "is_vpn_proxy": false,
+                  "usage_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "geographic_anomalies": {
+                  "is_high_risk_country": false,
+                  "impossible_travel_detected": false,
+                  "vpn_proxy_detected": false,
+                  "geographic_anomalies": [],
+                  "risk_score_adjustment": 0
+                },
+                "connection_analysis": {
+                  "protocol": "UNKNOWN",
+                  "port": null,
+                  "is_common_protocol": false,
+                  "is_encrypted": false,
+                  "protocol_port_match": true,
+                  "connection_risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_score_adjustment": 2
+                },
+                "log_security_analysis": {
+                  "anomaly_score": null,
+                  "attack_type": null,
+                  "attack_signature": null,
+                  "severity_level": null,
+                  "malware_detected": false,
+                  "proxy_detected": false,
+                  "proxy_info": null,
+                  "high_anomaly": false,
+                  "critical_attack": false,
+                  "security_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "risk_assessment": {
+                  "risk_score": 2,
+                  "threat_level": "LOW",
+                  "risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_factors_count": 1
+                }
+              },
+              "ai_summary": "Source IP: Unknown\nDestination IP: Unknown\nPort: Unknown\nProtocol: UNKNOWN\nProtocol: UNKNOWN\n\nOverall Threat Level: LOW (Risk Score: 2/100)\n\nKey Risk Factors:\n  • Unknown protocol",
+              "_cache_stats": {
+                "new_entries": 0,
+                "skipped": 0,
+                "errors": 1
+              },
+              "_cache_updated": false,
+              "filename": "enrichment_cache.json"
+            }
+          }
+        ],
+        "Timestamp": "2020-08-26 07:08:30",
+        "Source IP Address": "78.199.217.198",
+        "Destination IP Address": "66.191.137.154",
+        "Source Port": "17245",
+        "Destination Port": "48166",
+        "Protocol": "ICMP",
+        "Packet Length": "1174",
+        "Packet Type": "Data",
+        "Traffic Type": "HTTP",
+        "Payload Data": "Aperiam quos modi officiis veritatis rem. Omnis nulla dolore perspiciatis.\nIllo animi mollitia vero voluptates error ad. Quidem maxime eaque optio a. Consectetur quasi veniam et totam culpa ullam.",
+        "Malware Indicators": "IoC Detected",
+        "Anomaly Scores": "51.5",
+        "Attack Type": "Malware",
+        "Attack Signature": "Known Pattern A",
+        "Action Taken": "Blocked",
+        "Severity Level": "Low",
+        "User Information": "Sumer Rana",
+        "Device Information": "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0)",
+        "Network Segment": "Segment B",
+        "Geo-location Data": "Bilaspur, Nagaland",
+        "Firewall Logs": "Log Data",
+        "Log Source": "Firewall",
+        "ip": "78.199.217.198",
+        "continent_code": "EU",
+        "continent_name": "Europe",
+        "country_code2": "FR",
+        "country_code3": "FRA",
+        "country_name": "France",
+        "country_name_official": "Republic of France",
+        "country_capital": "Paris",
+        "state_prov": "Ile-de-France",
+        "state_code": "FR-IDF",
+        "district": "Paris",
+        "city": "Paris",
+        "zipcode": "75001",
+        "latitude": "48.85717",
+        "longitude": "2.34140",
+        "is_eu": true,
+        "country_flag": "https://ipgeolocation.io/static/flags/fr_64.png",
+        "geoname_id": "6452939",
+        "country_emoji": "🇫🇷",
+        "calling_code": "+33",
+        "country_tld": ".fr",
+        "languages": "fr-FR,frp,br,co,ca,eu,oc",
+        "isp": "Free SAS",
+        "connection_type": "",
+        "organization": "Free SAS",
+        "currency": {
+          "code": "EUR",
+          "name": "Euro",
+          "symbol": "€"
+        },
+        "time_zone": {
+          "name": "Europe/Paris",
+          "offset": 1,
+          "offset_with_dst": 1,
+          "current_time": "2025-11-16 06:19:39.046+0100",
+          "current_time_unix": 1763270379.046,
+          "current_tz_abbreviation": "CET",
+          "current_tz_full_name": "Central European Standard Time",
+          "standard_tz_abbreviation": "CET",
+          "standard_tz_full_name": "Central European Standard Time",
+          "is_dst": false,
+          "dst_savings": 0,
+          "dst_exists": true,
+          "dst_tz_abbreviation": "CEST",
+          "dst_tz_full_name": "Central European Summer Time",
+          "dst_start": {
+            "utc_time": "2025-03-30 TIME 01",
+            "duration": "+1H",
+            "gap": true,
+            "dateTimeAfter": "2025-03-30 TIME 03",
+            "dateTimeBefore": "2025-03-30 TIME 02",
+            "overlap": false
+          },
+          "dst_end": {
+            "utc_time": "2025-10-26 TIME 01",
+            "duration": "-1H",
+            "gap": false,
+            "dateTimeAfter": "2025-10-26 TIME 02",
+            "dateTimeBefore": "2025-10-26 TIME 03",
+            "overlap": true
+          }
+        },
+        "cache_hit": false,
+        "cache_reason": "Not found",
+        "source_ip": "78.199.217.198"
+      }
+    }
+  },
+  "63.79.210.48": {
+    "timestamp": 1763270478904,
+    "data": {
+      "source_ip": "63.79.210.48",
+      "enrichment": {
+        "geolocation": {
+          "country": "Unknown",
+          "city": "Unknown",
+          "isp": "Unknown",
+          "organization": "Unknown",
+          "asn": "",
+          "coordinates": {
+            "lat": 0,
+            "lon": 0
+          },
+          "timezone": "Unknown",
+          "is_eu": false,
+          "sources": [],
+          "conflicts": [],
+          "usage_type": null,
+          "domain": null,
+          "is_tor": false
+        },
+        "threat_intelligence": {
+          "abuse_score": 0,
+          "reputation": 0,
+          "total_reports": 0,
+          "num_distinct_users": 0,
+          "last_reported_at": null,
+          "vt_detections": 0,
+          "vt_total": 0,
+          "vt_ratio": 0,
+          "pulse_count": 0,
+          "malware_families": [],
+          "adversaries": [],
+          "shodan_tags": [],
+          "greynoise_classification": null,
+          "greynoise_tags": [],
+          "open_ports": [],
+          "services": [],
+          "vulnerabilities": [],
+          "cves": [],
+          "historical_attacks": [],
+          "pulse_references": [],
+          "is_known_threat": false
+        },
+        "port_analysis": {
+          "port": 53600,
+          "is_sensitive_port": false,
+          "port_category": "Ephemeral",
+          "port_type": "Other",
+          "risk_level": "LOW",
+          "is_common": false,
+          "description": "Ephemeral port (client-side connection)"
+        },
+        "temporal_analysis": {
+          "hour": 8,
+          "day_of_week": 0,
+          "is_suspicious_hour": false,
+          "is_business_hour": false,
+          "is_weekend": true,
+          "is_off_hours": true,
+          "is_unusual_pattern": false,
+          "weekday_anomaly": false,
+          "weekend_anomaly": true,
+          "days_since": 1098,
+          "temporal_risk_factors": [
+            "Weekend activity detected",
+            "Off-hours activity detected (8:00 UTC)",
+            "Very old timestamp (1098 days ago)"
+          ],
+          "risk_score_adjustment": 5
+        },
+        "usage_analysis": {
+          "usage_type": null,
+          "domain": null,
+          "hostnames": [],
+          "is_suspicious_usage": false,
+          "is_suspicious_domain": false,
+          "is_tor": false,
+          "is_datacenter": false,
+          "is_vpn_proxy": false,
+          "usage_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "geographic_anomalies": {
+          "is_high_risk_country": false,
+          "impossible_travel_detected": false,
+          "vpn_proxy_detected": false,
+          "geographic_anomalies": [],
+          "risk_score_adjustment": 0
+        },
+        "connection_analysis": {
+          "protocol": "UDP",
+          "port": 53600,
+          "is_common_protocol": true,
+          "is_encrypted": false,
+          "protocol_port_match": true,
+          "connection_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "log_security_analysis": {
+          "anomaly_score": 87.42,
+          "attack_type": "DDoS",
+          "attack_signature": "Known Pattern B",
+          "severity_level": "Low",
+          "malware_detected": false,
+          "proxy_detected": true,
+          "proxy_info": "114.133.48.179",
+          "high_anomaly": true,
+          "critical_attack": true,
+          "security_risk_factors": [
+            "HIGH: High anomaly score (87.42)",
+            "CRITICAL Attack Type: DDoS",
+            "Attack Signature: Known Pattern B",
+            "Severity: Low",
+            "Proxy Detected: 114.133.48.179",
+            "⚠️  Action: IGNORED (threat was ignored!)"
+          ],
+          "risk_score_adjustment": 78
+        },
+        "risk_assessment": {
+          "risk_score": 83,
+          "threat_level": "CRITICAL",
+          "risk_factors": [
+            "Weekend activity detected",
+            "Off-hours activity detected (8:00 UTC)",
+            "Very old timestamp (1098 days ago)",
+            "HIGH: High anomaly score (87.42)",
+            "CRITICAL Attack Type: DDoS",
+            "Attack Signature: Known Pattern B",
+            "Severity: Low",
+            "Proxy Detected: 114.133.48.179",
+            "⚠️  Action: IGNORED (threat was ignored!)"
+          ],
+          "risk_factors_count": 9
+        }
+      },
+      "ai_summary": "Source IP: 63.79.210.48\nDestination IP: 198.219.82.17\nPort: 53600\nProtocol: UDP\nTimestamp: 2022-11-13 08:23:25\n\nTime-based Analysis:\n  Time: Sunday at 8:00 UTC\n  ⚠️  OFF-HOURS: Activity outside business hours\n  ⚠️⚠️  WEEKEND ANOMALY: Suspicious weekend activity\n  Days since event: 1098\n\n  Temporal Risk Factors:\n    • Weekend activity detected\n    • Off-hours activity detected (8:00 UTC)\n    • Very old timestamp (1098 days ago)\nProtocol: UDP\n\nSecurity Indicators from Log:\n  Anomaly Score: 87.42\n  ⚠️⚠️⚠️  CRITICAL: Very high anomaly score!\n  Attack Type: DDoS\n  ⚠️⚠️⚠️  CRITICAL ATTACK DETECTED!\n  Attack Signature: Known Pattern B\n  Severity Level: LOW\n  Proxy Detected: 114.133.48.179\n\n  Security Risk Factors:\n    • HIGH: High anomaly score (87.42)\n    • CRITICAL Attack Type: DDoS\n    • Attack Signature: Known Pattern B\n    • Severity: Low\n    • Proxy Detected: 114.133.48.179\n    • ⚠️  Action: IGNORED (threat was ignored!)\n\nPort Analysis:\n  Port: 53600\n  Service: Other\n  Category: Ephemeral\n  Risk Level: LOW\n  Description: Ephemeral port (client-side connection)\n\nOverall Threat Level: CRITICAL (Risk Score: 83/100)\n\nKey Risk Factors:\n  • Weekend activity detected\n  • Off-hours activity detected (8:00 UTC)\n  • Very old timestamp (1098 days ago)\n  • HIGH: High anomaly score (87.42)\n  • CRITICAL Attack Type: DDoS\n  ... and 4 more",
+      "source_data": {
+        "query_status": "no_result",
+        "data": [
+          {
+            "source_ip": "Unknown",
+            "destination_ip": "Unknown",
+            "destination_port": "",
+            "protocol": "UNKNOWN",
+            "timestamp": "Unknown",
+            "country": "Unknown",
+            "city": "Unknown",
+            "isp": "Unknown",
+            "abuse_score": null,
+            "otx_pulses": null,
+            "anomaly_score": null,
+            "attack_type": "",
+            "severity_level": "",
+            "risk_score": 2,
+            "threat_level": "LOW",
+            "risk_factors": [
+              "Unknown protocol"
+            ],
+            "gpt_verdict": "",
+            "gpt_confidence": null,
+            "gpt_threat_level": "",
+            "gemini_verdict": "",
+            "gemini_confidence": null,
+            "gemini_agreement": "",
+            "final_verdict": "",
+            "final_confidence": null,
+            "final_threat_level": "",
+            "final_recommended_action": "",
+            "final_reasoning": "",
+            "enrichment": {
+              "geolocation": {
+                "country": "Unknown",
+                "city": "Unknown",
+                "isp": "Unknown",
+                "organization": "Unknown",
+                "asn": "",
+                "coordinates": {
+                  "lat": 0,
+                  "lon": 0
+                },
+                "timezone": "Unknown",
+                "is_eu": false,
+                "sources": [],
+                "conflicts": [],
+                "usage_type": null,
+                "domain": null,
+                "is_tor": false
+              },
+              "threat_intelligence": {
+                "abuse_score": 0,
+                "reputation": 0,
+                "total_reports": 0,
+                "num_distinct_users": 0,
+                "last_reported_at": null,
+                "vt_detections": 0,
+                "vt_total": 0,
+                "vt_ratio": 0,
+                "pulse_count": 0,
+                "malware_families": [],
+                "adversaries": [],
+                "shodan_tags": [],
+                "greynoise_classification": null,
+                "greynoise_tags": [],
+                "open_ports": [],
+                "services": [],
+                "vulnerabilities": [],
+                "cves": [],
+                "historical_attacks": [],
+                "pulse_references": [],
+                "is_known_threat": false
+              },
+              "port_analysis": {
+                "port": null,
+                "is_sensitive_port": false,
+                "port_category": "Unknown",
+                "risk_level": "LOW",
+                "is_common": false,
+                "port_type": "Unknown",
+                "description": "Port not specified or invalid"
+              },
+              "temporal_analysis": {
+                "hour": null,
+                "day_of_week": null,
+                "is_suspicious_hour": false,
+                "is_business_hour": false,
+                "is_weekend": false,
+                "is_off_hours": false,
+                "is_unusual_pattern": false,
+                "weekday_anomaly": false,
+                "weekend_anomaly": false,
+                "days_since": null,
+                "temporal_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "usage_analysis": {
+                "usage_type": null,
+                "domain": null,
+                "hostnames": [],
+                "is_suspicious_usage": false,
+                "is_suspicious_domain": false,
+                "is_tor": false,
+                "is_datacenter": false,
+                "is_vpn_proxy": false,
+                "usage_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "geographic_anomalies": {
+                "is_high_risk_country": false,
+                "impossible_travel_detected": false,
+                "vpn_proxy_detected": false,
+                "geographic_anomalies": [],
+                "risk_score_adjustment": 0
+              },
+              "connection_analysis": {
+                "protocol": "UNKNOWN",
+                "port": null,
+                "is_common_protocol": false,
+                "is_encrypted": false,
+                "protocol_port_match": true,
+                "connection_risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_score_adjustment": 2
+              },
+              "log_security_analysis": {
+                "anomaly_score": null,
+                "attack_type": null,
+                "attack_signature": null,
+                "severity_level": null,
+                "malware_detected": false,
+                "proxy_detected": false,
+                "proxy_info": null,
+                "high_anomaly": false,
+                "critical_attack": false,
+                "security_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "risk_assessment": {
+                "risk_score": 2,
+                "threat_level": "LOW",
+                "risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_factors_count": 1
+              }
+            },
+            "source_data": {
+              "content": {
+                "parts": [
+                  {
+                    "text": "```json\n{\n  \"agreement\": false,\n  \"verdict\": \"TRUE_POSITIVE\",\n  \"confidence\": 100,\n  \"threat_level\": \"HIGH\",\n  \"recommended_action\": \"BLOCK\",\n  \"reasoning\": \"The complete lack of identifiable information (Source IP, Destination IP, Port, and Protocol all unknown) represents a critical security blind spot, not just an 'unknown protocol.' This extreme level of obfuscation or data loss prevents any security analysis and could mask malicious activity or indicate a severe monitoring system failure. Such an event should be classified as high risk to warrant immediate investigation and blocking until clarity is achieved.\"\n}\n```"
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0,
+              "source_ip": "Unknown",
+              "dest_ip": "Unknown",
+              "port": null,
+              "timestamp": "Unknown",
+              "protocol": "UNKNOWN",
+              "source_data": {},
+              "enrichment": {
+                "geolocation": {
+                  "country": "Unknown",
+                  "city": "Unknown",
+                  "isp": "Unknown",
+                  "organization": "Unknown",
+                  "asn": "",
+                  "coordinates": {
+                    "lat": 0,
+                    "lon": 0
+                  },
+                  "timezone": "Unknown",
+                  "is_eu": false,
+                  "sources": [],
+                  "conflicts": [],
+                  "usage_type": null,
+                  "domain": null,
+                  "is_tor": false
+                },
+                "threat_intelligence": {
+                  "abuse_score": 0,
+                  "reputation": 0,
+                  "total_reports": 0,
+                  "num_distinct_users": 0,
+                  "last_reported_at": null,
+                  "vt_detections": 0,
+                  "vt_total": 0,
+                  "vt_ratio": 0,
+                  "pulse_count": 0,
+                  "malware_families": [],
+                  "adversaries": [],
+                  "shodan_tags": [],
+                  "greynoise_classification": null,
+                  "greynoise_tags": [],
+                  "open_ports": [],
+                  "services": [],
+                  "vulnerabilities": [],
+                  "cves": [],
+                  "historical_attacks": [],
+                  "pulse_references": [],
+                  "is_known_threat": false
+                },
+                "port_analysis": {
+                  "port": null,
+                  "is_sensitive_port": false,
+                  "port_category": "Unknown",
+                  "risk_level": "LOW",
+                  "is_common": false,
+                  "port_type": "Unknown",
+                  "description": "Port not specified or invalid"
+                },
+                "temporal_analysis": {
+                  "hour": null,
+                  "day_of_week": null,
+                  "is_suspicious_hour": false,
+                  "is_business_hour": false,
+                  "is_weekend": false,
+                  "is_off_hours": false,
+                  "is_unusual_pattern": false,
+                  "weekday_anomaly": false,
+                  "weekend_anomaly": false,
+                  "days_since": null,
+                  "temporal_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "usage_analysis": {
+                  "usage_type": null,
+                  "domain": null,
+                  "hostnames": [],
+                  "is_suspicious_usage": false,
+                  "is_suspicious_domain": false,
+                  "is_tor": false,
+                  "is_datacenter": false,
+                  "is_vpn_proxy": false,
+                  "usage_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "geographic_anomalies": {
+                  "is_high_risk_country": false,
+                  "impossible_travel_detected": false,
+                  "vpn_proxy_detected": false,
+                  "geographic_anomalies": [],
+                  "risk_score_adjustment": 0
+                },
+                "connection_analysis": {
+                  "protocol": "UNKNOWN",
+                  "port": null,
+                  "is_common_protocol": false,
+                  "is_encrypted": false,
+                  "protocol_port_match": true,
+                  "connection_risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_score_adjustment": 2
+                },
+                "log_security_analysis": {
+                  "anomaly_score": null,
+                  "attack_type": null,
+                  "attack_signature": null,
+                  "severity_level": null,
+                  "malware_detected": false,
+                  "proxy_detected": false,
+                  "proxy_info": null,
+                  "high_anomaly": false,
+                  "critical_attack": false,
+                  "security_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "risk_assessment": {
+                  "risk_score": 2,
+                  "threat_level": "LOW",
+                  "risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_factors_count": 1
+                }
+              },
+              "ai_summary": "Source IP: Unknown\nDestination IP: Unknown\nPort: Unknown\nProtocol: UNKNOWN\nProtocol: UNKNOWN\n\nOverall Threat Level: LOW (Risk Score: 2/100)\n\nKey Risk Factors:\n  • Unknown protocol",
+              "_cache_stats": {
+                "new_entries": 0,
+                "skipped": 0,
+                "errors": 1
+              },
+              "_cache_updated": false,
+              "filename": "enrichment_cache.json"
+            }
+          }
+        ],
+        "Timestamp": "2022-11-13 08:23:25",
+        "Source IP Address": "63.79.210.48",
+        "Destination IP Address": "198.219.82.17",
+        "Source Port": "16811",
+        "Destination Port": "53600",
+        "Protocol": "UDP",
+        "Packet Length": "306",
+        "Packet Type": "Control",
+        "Traffic Type": "HTTP",
+        "Payload Data": "Perferendis sapiente vitae soluta. Hic delectus quae nemo ea esse est rerum.",
+        "Malware Indicators": "IoC Detected",
+        "Anomaly Scores": "87.42",
+        "Alerts/Warnings": "Alert Triggered",
+        "Attack Type": "DDoS",
+        "Attack Signature": "Known Pattern B",
+        "Action Taken": "Ignored",
+        "Severity Level": "Low",
+        "User Information": "Himmat Karpe",
+        "Device Information": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Trident/5.0)",
+        "Network Segment": "Segment C",
+        "Geo-location Data": "Bokaro, Rajasthan",
+        "Proxy Information": "114.133.48.179",
+        "Firewall Logs": "Log Data",
+        "IDS/IPS Alerts": "Alert Data",
+        "Log Source": "Firewall",
+        "ip": "63.79.210.48",
+        "continent_code": "NA",
+        "continent_name": "North America",
+        "country_code2": "US",
+        "country_code3": "USA",
+        "country_name": "United States",
+        "country_name_official": "United States of America",
+        "country_capital": "Washington, D.C.",
+        "state_prov": "New York",
+        "state_code": "US-NY",
+        "district": "Kew Gardens",
+        "city": "Kew Gardens",
+        "zipcode": "11415",
+        "latitude": "40.71353",
+        "longitude": "-73.83052",
+        "is_eu": false,
+        "country_flag": "https://ipgeolocation.io/static/flags/us_64.png",
+        "geoname_id": "5123344",
+        "country_emoji": "🇺🇸",
+        "calling_code": "+1",
+        "country_tld": ".us",
+        "languages": "en-US,es-US,haw,fr",
+        "isp": "IG2, Inc.",
+        "connection_type": "",
+        "organization": "Verizon Business",
+        "currency": {
+          "code": "USD",
+          "name": "US Dollar",
+          "symbol": "$"
+        },
+        "time_zone": {
+          "name": "America/New_York",
+          "offset": -5,
+          "offset_with_dst": -5,
+          "current_time": "2025-11-16 00:19:39.048-0500",
+          "current_time_unix": 1763270379.048,
+          "current_tz_abbreviation": "EST",
+          "current_tz_full_name": "Eastern Standard Time",
+          "standard_tz_abbreviation": "EST",
+          "standard_tz_full_name": "Eastern Standard Time",
+          "is_dst": false,
+          "dst_savings": 0,
+          "dst_exists": true,
+          "dst_tz_abbreviation": "EDT",
+          "dst_tz_full_name": "Eastern Daylight Time",
+          "dst_start": {
+            "utc_time": "2025-03-09 TIME 07",
+            "duration": "+1H",
+            "gap": true,
+            "dateTimeAfter": "2025-03-09 TIME 03",
+            "dateTimeBefore": "2025-03-09 TIME 02",
+            "overlap": false
+          },
+          "dst_end": {
+            "utc_time": "2025-11-02 TIME 06",
+            "duration": "-1H",
+            "gap": false,
+            "dateTimeAfter": "2025-11-02 TIME 01",
+            "dateTimeBefore": "2025-11-02 TIME 02",
+            "overlap": true
+          }
+        },
+        "cache_hit": false,
+        "cache_reason": "Not found",
+        "source_ip": "63.79.210.48"
+      }
+    }
+  },
+  "163.42.196.10": {
+    "timestamp": 1763270478904,
+    "data": {
+      "source_ip": "163.42.196.10",
+      "enrichment": {
+        "geolocation": {
+          "country": "Unknown",
+          "city": "Unknown",
+          "isp": "Unknown",
+          "organization": "Unknown",
+          "asn": "",
+          "coordinates": {
+            "lat": 0,
+            "lon": 0
+          },
+          "timezone": "Unknown",
+          "is_eu": false,
+          "sources": [],
+          "conflicts": [],
+          "usage_type": null,
+          "domain": null,
+          "is_tor": false
+        },
+        "threat_intelligence": {
+          "abuse_score": 0,
+          "reputation": 0,
+          "total_reports": 0,
+          "num_distinct_users": 0,
+          "last_reported_at": null,
+          "vt_detections": 0,
+          "vt_total": 0,
+          "vt_ratio": 0,
+          "pulse_count": 0,
+          "malware_families": [],
+          "adversaries": [],
+          "shodan_tags": [],
+          "greynoise_classification": null,
+          "greynoise_tags": [],
+          "open_ports": [],
+          "services": [],
+          "vulnerabilities": [],
+          "cves": [],
+          "historical_attacks": [],
+          "pulse_references": [],
+          "is_known_threat": false
+        },
+        "port_analysis": {
+          "port": 32534,
+          "is_sensitive_port": false,
+          "port_category": "Registered",
+          "port_type": "Other",
+          "risk_level": "LOW-MEDIUM",
+          "is_common": false,
+          "description": "Registered port - may indicate custom application"
+        },
+        "temporal_analysis": {
+          "hour": 10,
+          "day_of_week": 0,
+          "is_suspicious_hour": false,
+          "is_business_hour": true,
+          "is_weekend": true,
+          "is_off_hours": false,
+          "is_unusual_pattern": false,
+          "weekday_anomaly": false,
+          "weekend_anomaly": true,
+          "days_since": 867,
+          "temporal_risk_factors": [
+            "ANOMALY: Business hours activity on weekend (10:00 UTC)",
+            "Very old timestamp (867 days ago)"
+          ],
+          "risk_score_adjustment": 8
+        },
+        "usage_analysis": {
+          "usage_type": null,
+          "domain": null,
+          "hostnames": [],
+          "is_suspicious_usage": false,
+          "is_suspicious_domain": false,
+          "is_tor": false,
+          "is_datacenter": false,
+          "is_vpn_proxy": false,
+          "usage_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "geographic_anomalies": {
+          "is_high_risk_country": false,
+          "impossible_travel_detected": false,
+          "vpn_proxy_detected": false,
+          "geographic_anomalies": [],
+          "risk_score_adjustment": 0
+        },
+        "connection_analysis": {
+          "protocol": "UDP",
+          "port": 32534,
+          "is_common_protocol": true,
+          "is_encrypted": false,
+          "protocol_port_match": true,
+          "connection_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "log_security_analysis": {
+          "anomaly_score": 15.79,
+          "attack_type": "Malware",
+          "attack_signature": "Known Pattern B",
+          "severity_level": "Medium",
+          "malware_detected": true,
+          "proxy_detected": false,
+          "proxy_info": null,
+          "high_anomaly": false,
+          "critical_attack": false,
+          "security_risk_factors": [
+            "Malware Attack: Malware",
+            "Attack Signature: Known Pattern B",
+            "MEDIUM Severity: Medium",
+            "Action: BLOCKED (threat was blocked)"
+          ],
+          "risk_score_adjustment": 48
+        },
+        "risk_assessment": {
+          "risk_score": 70,
+          "threat_level": "HIGH",
+          "risk_factors": [
+            "ANOMALY: Business hours activity on weekend (10:00 UTC)",
+            "Very old timestamp (867 days ago)",
+            "Malware Attack: Malware",
+            "Attack Signature: Known Pattern B",
+            "MEDIUM Severity: Medium",
+            "Action: BLOCKED (threat was blocked)"
+          ],
+          "risk_factors_count": 6
+        }
+      },
+      "ai_summary": "Source IP: 163.42.196.10\nDestination IP: 101.228.192.255\nPort: 32534\nProtocol: UDP\nTimestamp: 2023-07-02 10:38:46\n\nTime-based Analysis:\n  Time: Sunday at 10:00 UTC\n  ⚠️⚠️  WEEKEND ANOMALY: Suspicious weekend activity\n  Days since event: 867\n\n  Temporal Risk Factors:\n    • ANOMALY: Business hours activity on weekend (10:00 UTC)\n    • Very old timestamp (867 days ago)\nProtocol: UDP\n\nSecurity Indicators from Log:\n  Anomaly Score: 15.79\n  Attack Type: Malware\n  Attack Signature: Known Pattern B\n  Severity Level: MEDIUM\n  ⚠️⚠️⚠️  CRITICAL: MALWARE INDICATORS DETECTED!\n\n  Security Risk Factors:\n    • Malware Attack: Malware\n    • Attack Signature: Known Pattern B\n    • MEDIUM Severity: Medium\n    • Action: BLOCKED (threat was blocked)\n\nPort Analysis:\n  Port: 32534\n  Service: Other\n  Category: Registered\n  Risk Level: LOW-MEDIUM\n  Description: Registered port - may indicate custom application\n\nOverall Threat Level: HIGH (Risk Score: 70/100)\n\nKey Risk Factors:\n  • ANOMALY: Business hours activity on weekend (10:00 UTC)\n  • Very old timestamp (867 days ago)\n  • Malware Attack: Malware\n  • Attack Signature: Known Pattern B\n  • MEDIUM Severity: Medium\n  ... and 1 more",
+      "source_data": {
+        "query_status": "no_result",
+        "data": [
+          {
+            "source_ip": "Unknown",
+            "destination_ip": "Unknown",
+            "destination_port": "",
+            "protocol": "UNKNOWN",
+            "timestamp": "Unknown",
+            "country": "Unknown",
+            "city": "Unknown",
+            "isp": "Unknown",
+            "abuse_score": null,
+            "otx_pulses": null,
+            "anomaly_score": null,
+            "attack_type": "",
+            "severity_level": "",
+            "risk_score": 2,
+            "threat_level": "LOW",
+            "risk_factors": [
+              "Unknown protocol"
+            ],
+            "gpt_verdict": "",
+            "gpt_confidence": null,
+            "gpt_threat_level": "",
+            "gemini_verdict": "",
+            "gemini_confidence": null,
+            "gemini_agreement": "",
+            "final_verdict": "",
+            "final_confidence": null,
+            "final_threat_level": "",
+            "final_recommended_action": "",
+            "final_reasoning": "",
+            "enrichment": {
+              "geolocation": {
+                "country": "Unknown",
+                "city": "Unknown",
+                "isp": "Unknown",
+                "organization": "Unknown",
+                "asn": "",
+                "coordinates": {
+                  "lat": 0,
+                  "lon": 0
+                },
+                "timezone": "Unknown",
+                "is_eu": false,
+                "sources": [],
+                "conflicts": [],
+                "usage_type": null,
+                "domain": null,
+                "is_tor": false
+              },
+              "threat_intelligence": {
+                "abuse_score": 0,
+                "reputation": 0,
+                "total_reports": 0,
+                "num_distinct_users": 0,
+                "last_reported_at": null,
+                "vt_detections": 0,
+                "vt_total": 0,
+                "vt_ratio": 0,
+                "pulse_count": 0,
+                "malware_families": [],
+                "adversaries": [],
+                "shodan_tags": [],
+                "greynoise_classification": null,
+                "greynoise_tags": [],
+                "open_ports": [],
+                "services": [],
+                "vulnerabilities": [],
+                "cves": [],
+                "historical_attacks": [],
+                "pulse_references": [],
+                "is_known_threat": false
+              },
+              "port_analysis": {
+                "port": null,
+                "is_sensitive_port": false,
+                "port_category": "Unknown",
+                "risk_level": "LOW",
+                "is_common": false,
+                "port_type": "Unknown",
+                "description": "Port not specified or invalid"
+              },
+              "temporal_analysis": {
+                "hour": null,
+                "day_of_week": null,
+                "is_suspicious_hour": false,
+                "is_business_hour": false,
+                "is_weekend": false,
+                "is_off_hours": false,
+                "is_unusual_pattern": false,
+                "weekday_anomaly": false,
+                "weekend_anomaly": false,
+                "days_since": null,
+                "temporal_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "usage_analysis": {
+                "usage_type": null,
+                "domain": null,
+                "hostnames": [],
+                "is_suspicious_usage": false,
+                "is_suspicious_domain": false,
+                "is_tor": false,
+                "is_datacenter": false,
+                "is_vpn_proxy": false,
+                "usage_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "geographic_anomalies": {
+                "is_high_risk_country": false,
+                "impossible_travel_detected": false,
+                "vpn_proxy_detected": false,
+                "geographic_anomalies": [],
+                "risk_score_adjustment": 0
+              },
+              "connection_analysis": {
+                "protocol": "UNKNOWN",
+                "port": null,
+                "is_common_protocol": false,
+                "is_encrypted": false,
+                "protocol_port_match": true,
+                "connection_risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_score_adjustment": 2
+              },
+              "log_security_analysis": {
+                "anomaly_score": null,
+                "attack_type": null,
+                "attack_signature": null,
+                "severity_level": null,
+                "malware_detected": false,
+                "proxy_detected": false,
+                "proxy_info": null,
+                "high_anomaly": false,
+                "critical_attack": false,
+                "security_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "risk_assessment": {
+                "risk_score": 2,
+                "threat_level": "LOW",
+                "risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_factors_count": 1
+              }
+            },
+            "source_data": {
+              "content": {
+                "parts": [
+                  {
+                    "text": "```json\n{\n  \"agreement\": false,\n  \"verdict\": \"TRUE_POSITIVE\",\n  \"confidence\": 100,\n  \"threat_level\": \"HIGH\",\n  \"recommended_action\": \"BLOCK\",\n  \"reasoning\": \"The complete lack of identifiable information (Source IP, Destination IP, Port, and Protocol all unknown) represents a critical security blind spot, not just an 'unknown protocol.' This extreme level of obfuscation or data loss prevents any security analysis and could mask malicious activity or indicate a severe monitoring system failure. Such an event should be classified as high risk to warrant immediate investigation and blocking until clarity is achieved.\"\n}\n```"
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0,
+              "source_ip": "Unknown",
+              "dest_ip": "Unknown",
+              "port": null,
+              "timestamp": "Unknown",
+              "protocol": "UNKNOWN",
+              "source_data": {},
+              "enrichment": {
+                "geolocation": {
+                  "country": "Unknown",
+                  "city": "Unknown",
+                  "isp": "Unknown",
+                  "organization": "Unknown",
+                  "asn": "",
+                  "coordinates": {
+                    "lat": 0,
+                    "lon": 0
+                  },
+                  "timezone": "Unknown",
+                  "is_eu": false,
+                  "sources": [],
+                  "conflicts": [],
+                  "usage_type": null,
+                  "domain": null,
+                  "is_tor": false
+                },
+                "threat_intelligence": {
+                  "abuse_score": 0,
+                  "reputation": 0,
+                  "total_reports": 0,
+                  "num_distinct_users": 0,
+                  "last_reported_at": null,
+                  "vt_detections": 0,
+                  "vt_total": 0,
+                  "vt_ratio": 0,
+                  "pulse_count": 0,
+                  "malware_families": [],
+                  "adversaries": [],
+                  "shodan_tags": [],
+                  "greynoise_classification": null,
+                  "greynoise_tags": [],
+                  "open_ports": [],
+                  "services": [],
+                  "vulnerabilities": [],
+                  "cves": [],
+                  "historical_attacks": [],
+                  "pulse_references": [],
+                  "is_known_threat": false
+                },
+                "port_analysis": {
+                  "port": null,
+                  "is_sensitive_port": false,
+                  "port_category": "Unknown",
+                  "risk_level": "LOW",
+                  "is_common": false,
+                  "port_type": "Unknown",
+                  "description": "Port not specified or invalid"
+                },
+                "temporal_analysis": {
+                  "hour": null,
+                  "day_of_week": null,
+                  "is_suspicious_hour": false,
+                  "is_business_hour": false,
+                  "is_weekend": false,
+                  "is_off_hours": false,
+                  "is_unusual_pattern": false,
+                  "weekday_anomaly": false,
+                  "weekend_anomaly": false,
+                  "days_since": null,
+                  "temporal_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "usage_analysis": {
+                  "usage_type": null,
+                  "domain": null,
+                  "hostnames": [],
+                  "is_suspicious_usage": false,
+                  "is_suspicious_domain": false,
+                  "is_tor": false,
+                  "is_datacenter": false,
+                  "is_vpn_proxy": false,
+                  "usage_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "geographic_anomalies": {
+                  "is_high_risk_country": false,
+                  "impossible_travel_detected": false,
+                  "vpn_proxy_detected": false,
+                  "geographic_anomalies": [],
+                  "risk_score_adjustment": 0
+                },
+                "connection_analysis": {
+                  "protocol": "UNKNOWN",
+                  "port": null,
+                  "is_common_protocol": false,
+                  "is_encrypted": false,
+                  "protocol_port_match": true,
+                  "connection_risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_score_adjustment": 2
+                },
+                "log_security_analysis": {
+                  "anomaly_score": null,
+                  "attack_type": null,
+                  "attack_signature": null,
+                  "severity_level": null,
+                  "malware_detected": false,
+                  "proxy_detected": false,
+                  "proxy_info": null,
+                  "high_anomaly": false,
+                  "critical_attack": false,
+                  "security_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "risk_assessment": {
+                  "risk_score": 2,
+                  "threat_level": "LOW",
+                  "risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_factors_count": 1
+                }
+              },
+              "ai_summary": "Source IP: Unknown\nDestination IP: Unknown\nPort: Unknown\nProtocol: UNKNOWN\nProtocol: UNKNOWN\n\nOverall Threat Level: LOW (Risk Score: 2/100)\n\nKey Risk Factors:\n  • Unknown protocol",
+              "_cache_stats": {
+                "new_entries": 0,
+                "skipped": 0,
+                "errors": 1
+              },
+              "_cache_updated": false,
+              "filename": "enrichment_cache.json"
+            }
+          }
+        ],
+        "Timestamp": "2023-07-02 10:38:46",
+        "Source IP Address": "163.42.196.10",
+        "Destination IP Address": "101.228.192.255",
+        "Source Port": "20018",
+        "Destination Port": "32534",
+        "Protocol": "UDP",
+        "Packet Length": "385",
+        "Packet Type": "Data",
+        "Traffic Type": "HTTP",
+        "Payload Data": "Totam maxime beatae expedita explicabo porro labore. Minima ab fugit officiis dicta perspiciatis pariatur. Facilis voluptates eligendi dolores eveniet deserunt. Eveniet reprehenderit culpa quo.",
+        "Anomaly Scores": "15.79",
+        "Alerts/Warnings": "Alert Triggered",
+        "Attack Type": "Malware",
+        "Attack Signature": "Known Pattern B",
+        "Action Taken": "Blocked",
+        "Severity Level": "Medium",
+        "User Information": "Fateh Kibe",
+        "Device Information": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_11_5; rv:1.9.6.20) Gecko/2583-02-14 13:30:10 Firefox/11.0",
+        "Network Segment": "Segment B",
+        "Geo-location Data": "Jaunpur, Rajasthan",
+        "IDS/IPS Alerts": "Alert Data",
+        "Log Source": "Firewall",
+        "ip": "163.42.196.10",
+        "continent_code": "AS",
+        "continent_name": "Asia",
+        "country_code2": "JP",
+        "country_code3": "JPN",
+        "country_name": "Japan",
+        "country_name_official": "Japan",
+        "country_capital": "Tokyo",
+        "state_prov": "Ibaraki",
+        "state_code": "JP-08",
+        "district": "",
+        "city": "Tsukuba",
+        "zipcode": "300-4248",
+        "latitude": "36.20482",
+        "longitude": "138.25292",
+        "is_eu": false,
+        "country_flag": "https://ipgeolocation.io/static/flags/jp_64.png",
+        "geoname_id": "9115556",
+        "country_emoji": "🇯🇵",
+        "calling_code": "+81",
+        "country_tld": ".jp",
+        "languages": "ja",
+        "isp": "Geospatial Information Authority of Japan",
+        "connection_type": "",
+        "organization": "Research Organization of Information and Systems, National Institute of Informatics",
+        "currency": {
+          "code": "JPY",
+          "name": "Yen",
+          "symbol": "¥"
+        },
+        "time_zone": {
+          "name": "Asia/Tokyo",
+          "offset": 9,
+          "offset_with_dst": 9,
+          "current_time": "2025-11-16 14:19:39.048+0900",
+          "current_time_unix": 1763270379.048,
+          "current_tz_abbreviation": "JST",
+          "current_tz_full_name": "Japan Standard Time",
+          "standard_tz_abbreviation": "JST",
+          "standard_tz_full_name": "Japan Standard Time",
+          "is_dst": false,
+          "dst_savings": 0,
+          "dst_exists": false,
+          "dst_tz_abbreviation": "",
+          "dst_tz_full_name": "",
+          "dst_start": "",
+          "dst_end": ""
+        },
+        "cache_hit": false,
+        "cache_reason": "Not found",
+        "source_ip": "163.42.196.10"
+      }
+    }
+  },
+  "71.166.185.76": {
+    "timestamp": 1763270478905,
+    "data": {
+      "source_ip": "71.166.185.76",
+      "enrichment": {
+        "geolocation": {
+          "country": "Unknown",
+          "city": "Unknown",
+          "isp": "Unknown",
+          "organization": "Unknown",
+          "asn": "",
+          "coordinates": {
+            "lat": 0,
+            "lon": 0
+          },
+          "timezone": "Unknown",
+          "is_eu": false,
+          "sources": [],
+          "conflicts": [],
+          "usage_type": null,
+          "domain": null,
+          "is_tor": false
+        },
+        "threat_intelligence": {
+          "abuse_score": 0,
+          "reputation": 0,
+          "total_reports": 0,
+          "num_distinct_users": 0,
+          "last_reported_at": null,
+          "vt_detections": 0,
+          "vt_total": 0,
+          "vt_ratio": 0,
+          "pulse_count": 0,
+          "malware_families": [],
+          "adversaries": [],
+          "shodan_tags": [],
+          "greynoise_classification": null,
+          "greynoise_tags": [],
+          "open_ports": [],
+          "services": [],
+          "vulnerabilities": [],
+          "cves": [],
+          "historical_attacks": [],
+          "pulse_references": [],
+          "is_known_threat": false
+        },
+        "port_analysis": {
+          "port": 26646,
+          "is_sensitive_port": false,
+          "port_category": "Registered",
+          "port_type": "Other",
+          "risk_level": "LOW-MEDIUM",
+          "is_common": false,
+          "description": "Registered port - may indicate custom application"
+        },
+        "temporal_analysis": {
+          "hour": 13,
+          "day_of_week": 0,
+          "is_suspicious_hour": false,
+          "is_business_hour": true,
+          "is_weekend": true,
+          "is_off_hours": false,
+          "is_unusual_pattern": false,
+          "weekday_anomaly": false,
+          "weekend_anomaly": true,
+          "days_since": 853,
+          "temporal_risk_factors": [
+            "ANOMALY: Business hours activity on weekend (13:00 UTC)",
+            "Very old timestamp (853 days ago)"
+          ],
+          "risk_score_adjustment": 8
+        },
+        "usage_analysis": {
+          "usage_type": null,
+          "domain": null,
+          "hostnames": [],
+          "is_suspicious_usage": false,
+          "is_suspicious_domain": false,
+          "is_tor": false,
+          "is_datacenter": false,
+          "is_vpn_proxy": false,
+          "usage_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "geographic_anomalies": {
+          "is_high_risk_country": false,
+          "impossible_travel_detected": false,
+          "vpn_proxy_detected": false,
+          "geographic_anomalies": [],
+          "risk_score_adjustment": 0
+        },
+        "connection_analysis": {
+          "protocol": "TCP",
+          "port": 26646,
+          "is_common_protocol": true,
+          "is_encrypted": false,
+          "protocol_port_match": true,
+          "connection_risk_factors": [],
+          "risk_score_adjustment": 0
+        },
+        "log_security_analysis": {
+          "anomaly_score": 0.52,
+          "attack_type": "DDoS",
+          "attack_signature": "Known Pattern B",
+          "severity_level": "Low",
+          "malware_detected": false,
+          "proxy_detected": true,
+          "proxy_info": "149.6.110.119",
+          "high_anomaly": false,
+          "critical_attack": true,
+          "security_risk_factors": [
+            "CRITICAL Attack Type: DDoS",
+            "Attack Signature: Known Pattern B",
+            "Severity: Low",
+            "Proxy Detected: 149.6.110.119",
+            "Action: BLOCKED (threat was blocked)"
+          ],
+          "risk_score_adjustment": 53
+        },
+        "risk_assessment": {
+          "risk_score": 61,
+          "threat_level": "HIGH",
+          "risk_factors": [
+            "ANOMALY: Business hours activity on weekend (13:00 UTC)",
+            "Very old timestamp (853 days ago)",
+            "CRITICAL Attack Type: DDoS",
+            "Attack Signature: Known Pattern B",
+            "Severity: Low",
+            "Proxy Detected: 149.6.110.119",
+            "Action: BLOCKED (threat was blocked)"
+          ],
+          "risk_factors_count": 7
+        }
+      },
+      "ai_summary": "Source IP: 71.166.185.76\nDestination IP: 189.243.174.238\nPort: 26646\nProtocol: TCP\nTimestamp: 2023-07-16 13:11:07\n\nTime-based Analysis:\n  Time: Sunday at 13:00 UTC\n  ⚠️⚠️  WEEKEND ANOMALY: Suspicious weekend activity\n  Days since event: 853\n\n  Temporal Risk Factors:\n    • ANOMALY: Business hours activity on weekend (13:00 UTC)\n    • Very old timestamp (853 days ago)\nProtocol: TCP\n\nSecurity Indicators from Log:\n  Anomaly Score: 0.52\n  Attack Type: DDoS\n  ⚠️⚠️⚠️  CRITICAL ATTACK DETECTED!\n  Attack Signature: Known Pattern B\n  Severity Level: LOW\n  Proxy Detected: 149.6.110.119\n\n  Security Risk Factors:\n    • CRITICAL Attack Type: DDoS\n    • Attack Signature: Known Pattern B\n    • Severity: Low\n    • Proxy Detected: 149.6.110.119\n    • Action: BLOCKED (threat was blocked)\n\nPort Analysis:\n  Port: 26646\n  Service: Other\n  Category: Registered\n  Risk Level: LOW-MEDIUM\n  Description: Registered port - may indicate custom application\n\nOverall Threat Level: HIGH (Risk Score: 61/100)\n\nKey Risk Factors:\n  • ANOMALY: Business hours activity on weekend (13:00 UTC)\n  • Very old timestamp (853 days ago)\n  • CRITICAL Attack Type: DDoS\n  • Attack Signature: Known Pattern B\n  • Severity: Low\n  ... and 2 more",
+      "source_data": {
+        "query_status": "no_result",
+        "data": [
+          {
+            "source_ip": "Unknown",
+            "destination_ip": "Unknown",
+            "destination_port": "",
+            "protocol": "UNKNOWN",
+            "timestamp": "Unknown",
+            "country": "Unknown",
+            "city": "Unknown",
+            "isp": "Unknown",
+            "abuse_score": null,
+            "otx_pulses": null,
+            "anomaly_score": null,
+            "attack_type": "",
+            "severity_level": "",
+            "risk_score": 2,
+            "threat_level": "LOW",
+            "risk_factors": [
+              "Unknown protocol"
+            ],
+            "gpt_verdict": "",
+            "gpt_confidence": null,
+            "gpt_threat_level": "",
+            "gemini_verdict": "",
+            "gemini_confidence": null,
+            "gemini_agreement": "",
+            "final_verdict": "",
+            "final_confidence": null,
+            "final_threat_level": "",
+            "final_recommended_action": "",
+            "final_reasoning": "",
+            "enrichment": {
+              "geolocation": {
+                "country": "Unknown",
+                "city": "Unknown",
+                "isp": "Unknown",
+                "organization": "Unknown",
+                "asn": "",
+                "coordinates": {
+                  "lat": 0,
+                  "lon": 0
+                },
+                "timezone": "Unknown",
+                "is_eu": false,
+                "sources": [],
+                "conflicts": [],
+                "usage_type": null,
+                "domain": null,
+                "is_tor": false
+              },
+              "threat_intelligence": {
+                "abuse_score": 0,
+                "reputation": 0,
+                "total_reports": 0,
+                "num_distinct_users": 0,
+                "last_reported_at": null,
+                "vt_detections": 0,
+                "vt_total": 0,
+                "vt_ratio": 0,
+                "pulse_count": 0,
+                "malware_families": [],
+                "adversaries": [],
+                "shodan_tags": [],
+                "greynoise_classification": null,
+                "greynoise_tags": [],
+                "open_ports": [],
+                "services": [],
+                "vulnerabilities": [],
+                "cves": [],
+                "historical_attacks": [],
+                "pulse_references": [],
+                "is_known_threat": false
+              },
+              "port_analysis": {
+                "port": null,
+                "is_sensitive_port": false,
+                "port_category": "Unknown",
+                "risk_level": "LOW",
+                "is_common": false,
+                "port_type": "Unknown",
+                "description": "Port not specified or invalid"
+              },
+              "temporal_analysis": {
+                "hour": null,
+                "day_of_week": null,
+                "is_suspicious_hour": false,
+                "is_business_hour": false,
+                "is_weekend": false,
+                "is_off_hours": false,
+                "is_unusual_pattern": false,
+                "weekday_anomaly": false,
+                "weekend_anomaly": false,
+                "days_since": null,
+                "temporal_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "usage_analysis": {
+                "usage_type": null,
+                "domain": null,
+                "hostnames": [],
+                "is_suspicious_usage": false,
+                "is_suspicious_domain": false,
+                "is_tor": false,
+                "is_datacenter": false,
+                "is_vpn_proxy": false,
+                "usage_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "geographic_anomalies": {
+                "is_high_risk_country": false,
+                "impossible_travel_detected": false,
+                "vpn_proxy_detected": false,
+                "geographic_anomalies": [],
+                "risk_score_adjustment": 0
+              },
+              "connection_analysis": {
+                "protocol": "UNKNOWN",
+                "port": null,
+                "is_common_protocol": false,
+                "is_encrypted": false,
+                "protocol_port_match": true,
+                "connection_risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_score_adjustment": 2
+              },
+              "log_security_analysis": {
+                "anomaly_score": null,
+                "attack_type": null,
+                "attack_signature": null,
+                "severity_level": null,
+                "malware_detected": false,
+                "proxy_detected": false,
+                "proxy_info": null,
+                "high_anomaly": false,
+                "critical_attack": false,
+                "security_risk_factors": [],
+                "risk_score_adjustment": 0
+              },
+              "risk_assessment": {
+                "risk_score": 2,
+                "threat_level": "LOW",
+                "risk_factors": [
+                  "Unknown protocol"
+                ],
+                "risk_factors_count": 1
+              }
+            },
+            "source_data": {
+              "content": {
+                "parts": [
+                  {
+                    "text": "```json\n{\n  \"agreement\": false,\n  \"verdict\": \"TRUE_POSITIVE\",\n  \"confidence\": 100,\n  \"threat_level\": \"HIGH\",\n  \"recommended_action\": \"BLOCK\",\n  \"reasoning\": \"The complete lack of identifiable information (Source IP, Destination IP, Port, and Protocol all unknown) represents a critical security blind spot, not just an 'unknown protocol.' This extreme level of obfuscation or data loss prevents any security analysis and could mask malicious activity or indicate a severe monitoring system failure. Such an event should be classified as high risk to warrant immediate investigation and blocking until clarity is achieved.\"\n}\n```"
+                  }
+                ],
+                "role": "model"
+              },
+              "finishReason": "STOP",
+              "index": 0,
+              "source_ip": "Unknown",
+              "dest_ip": "Unknown",
+              "port": null,
+              "timestamp": "Unknown",
+              "protocol": "UNKNOWN",
+              "source_data": {},
+              "enrichment": {
+                "geolocation": {
+                  "country": "Unknown",
+                  "city": "Unknown",
+                  "isp": "Unknown",
+                  "organization": "Unknown",
+                  "asn": "",
+                  "coordinates": {
+                    "lat": 0,
+                    "lon": 0
+                  },
+                  "timezone": "Unknown",
+                  "is_eu": false,
+                  "sources": [],
+                  "conflicts": [],
+                  "usage_type": null,
+                  "domain": null,
+                  "is_tor": false
+                },
+                "threat_intelligence": {
+                  "abuse_score": 0,
+                  "reputation": 0,
+                  "total_reports": 0,
+                  "num_distinct_users": 0,
+                  "last_reported_at": null,
+                  "vt_detections": 0,
+                  "vt_total": 0,
+                  "vt_ratio": 0,
+                  "pulse_count": 0,
+                  "malware_families": [],
+                  "adversaries": [],
+                  "shodan_tags": [],
+                  "greynoise_classification": null,
+                  "greynoise_tags": [],
+                  "open_ports": [],
+                  "services": [],
+                  "vulnerabilities": [],
+                  "cves": [],
+                  "historical_attacks": [],
+                  "pulse_references": [],
+                  "is_known_threat": false
+                },
+                "port_analysis": {
+                  "port": null,
+                  "is_sensitive_port": false,
+                  "port_category": "Unknown",
+                  "risk_level": "LOW",
+                  "is_common": false,
+                  "port_type": "Unknown",
+                  "description": "Port not specified or invalid"
+                },
+                "temporal_analysis": {
+                  "hour": null,
+                  "day_of_week": null,
+                  "is_suspicious_hour": false,
+                  "is_business_hour": false,
+                  "is_weekend": false,
+                  "is_off_hours": false,
+                  "is_unusual_pattern": false,
+                  "weekday_anomaly": false,
+                  "weekend_anomaly": false,
+                  "days_since": null,
+                  "temporal_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "usage_analysis": {
+                  "usage_type": null,
+                  "domain": null,
+                  "hostnames": [],
+                  "is_suspicious_usage": false,
+                  "is_suspicious_domain": false,
+                  "is_tor": false,
+                  "is_datacenter": false,
+                  "is_vpn_proxy": false,
+                  "usage_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "geographic_anomalies": {
+                  "is_high_risk_country": false,
+                  "impossible_travel_detected": false,
+                  "vpn_proxy_detected": false,
+                  "geographic_anomalies": [],
+                  "risk_score_adjustment": 0
+                },
+                "connection_analysis": {
+                  "protocol": "UNKNOWN",
+                  "port": null,
+                  "is_common_protocol": false,
+                  "is_encrypted": false,
+                  "protocol_port_match": true,
+                  "connection_risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_score_adjustment": 2
+                },
+                "log_security_analysis": {
+                  "anomaly_score": null,
+                  "attack_type": null,
+                  "attack_signature": null,
+                  "severity_level": null,
+                  "malware_detected": false,
+                  "proxy_detected": false,
+                  "proxy_info": null,
+                  "high_anomaly": false,
+                  "critical_attack": false,
+                  "security_risk_factors": [],
+                  "risk_score_adjustment": 0
+                },
+                "risk_assessment": {
+                  "risk_score": 2,
+                  "threat_level": "LOW",
+                  "risk_factors": [
+                    "Unknown protocol"
+                  ],
+                  "risk_factors_count": 1
+                }
+              },
+              "ai_summary": "Source IP: Unknown\nDestination IP: Unknown\nPort: Unknown\nProtocol: UNKNOWN\nProtocol: UNKNOWN\n\nOverall Threat Level: LOW (Risk Score: 2/100)\n\nKey Risk Factors:\n  • Unknown protocol",
+              "_cache_stats": {
+                "new_entries": 0,
+                "skipped": 0,
+                "errors": 1
+              },
+              "_cache_updated": false,
+              "filename": "enrichment_cache.json"
+            }
+          }
+        ],
+        "Timestamp": "2023-07-16 13:11:07",
+        "Source IP Address": "71.166.185.76",
+        "Destination IP Address": "189.243.174.238",
+        "Source Port": "6131",
+        "Destination Port": "26646",
+        "Protocol": "TCP",
+        "Packet Length": "1462",
+        "Packet Type": "Data",
+        "Traffic Type": "DNS",
+        "Payload Data": "Odit nesciunt dolorem nisi iste iusto. Animi voluptates soluta quis doloribus quas. Iure harum nihil hic illo repellendus.\nQuia illo fugit eligendi doloremque. In doloremque autem iure.",
+        "Anomaly Scores": "0.52",
+        "Alerts/Warnings": "Alert Triggered",
+        "Attack Type": "DDoS",
+        "Attack Signature": "Known Pattern B",
+        "Action Taken": "Blocked",
+        "Severity Level": "Low",
+        "User Information": "Dhanush Chad",
+        "Device Information": "Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 6.2; Trident/3.0)",
+        "Network Segment": "Segment C",
+        "Geo-location Data": "Anantapur, Tripura",
+        "Proxy Information": "149.6.110.119",
+        "IDS/IPS Alerts": "Alert Data",
+        "Log Source": "Firewall",
+        "ip": "71.166.185.76",
+        "continent_code": "NA",
+        "continent_name": "North America",
+        "country_code2": "US",
+        "country_code3": "USA",
+        "country_name": "United States",
+        "country_name_official": "United States of America",
+        "country_capital": "Washington, D.C.",
+        "state_prov": "Maryland",
+        "state_code": "US-MD",
+        "district": "Bethesda",
+        "city": "Bethesda",
+        "zipcode": "20814-4712",
+        "latitude": "38.99965",
+        "longitude": "-77.08552",
+        "is_eu": false,
+        "country_flag": "https://ipgeolocation.io/static/flags/us_64.png",
+        "geoname_id": "4370430",
+        "country_emoji": "🇺🇸",
+        "calling_code": "+1",
+        "country_tld": ".us",
+        "languages": "en-US,es-US,haw,fr",
+        "isp": "USUHS",
+        "connection_type": "",
+        "organization": "Verizon Business",
+        "currency": {
+          "code": "USD",
+          "name": "US Dollar",
+          "symbol": "$"
+        },
+        "time_zone": {
+          "name": "America/New_York",
+          "offset": -5,
+          "offset_with_dst": -5,
+          "current_time": "2025-11-16 00:19:39.047-0500",
+          "current_time_unix": 1763270379.047,
+          "current_tz_abbreviation": "EST",
+          "current_tz_full_name": "Eastern Standard Time",
+          "standard_tz_abbreviation": "EST",
+          "standard_tz_full_name": "Eastern Standard Time",
+          "is_dst": false,
+          "dst_savings": 0,
+          "dst_exists": true,
+          "dst_tz_abbreviation": "EDT",
+          "dst_tz_full_name": "Eastern Daylight Time",
+          "dst_start": {
+            "utc_time": "2025-03-09 TIME 07",
+            "duration": "+1H",
+            "gap": true,
+            "dateTimeAfter": "2025-03-09 TIME 03",
+            "dateTimeBefore": "2025-03-09 TIME 02",
+            "overlap": false
+          },
+          "dst_end": {
+            "utc_time": "2025-11-02 TIME 06",
+            "duration": "-1H",
+            "gap": false,
+            "dateTimeAfter": "2025-11-02 TIME 01",
+            "dateTimeBefore": "2025-11-02 TIME 02",
+            "overlap": true
+          }
+        },
+        "cache_hit": false,
+        "cache_reason": "Not found",
+        "source_ip": "71.166.185.76"
+      }
+    }
+  }
+}

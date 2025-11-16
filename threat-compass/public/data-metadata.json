@@ -1,0 +1,9 @@
+{
+  "lastUpdated": "2025-11-16T10:13:31Z",
+  "lastUpdatedTimestamp": 1763288011,
+  "source": "n8n-workflow",
+  "filesAvailable": {
+    "json": true,
+    "csv": true
+  }
+}

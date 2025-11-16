@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Security Operations Dark Theme */
+    --background: 222.2 47% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 33% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 217 33% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47% 5%;
+
+    --secondary: 217 33% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 188.7 94.5% 42.7%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 217.2 91.2% 59.8%;
+
+    --radius: 0.5rem;
+
+    /* Threat Level Colors */
+    --threat-critical: 0 84.2% 60.2%;
+    --threat-critical-foreground: 210 40% 98%;
+    --threat-high: 24.6 95% 53.1%;
+    --threat-high-foreground: 210 40% 98%;
+    --threat-medium: 47.9 95.8% 53.1%;
+    --threat-medium-foreground: 222.2 47% 5%;
+    --threat-low: 142.1 76.2% 36.3%;
+    --threat-low-foreground: 210 40% 98%;
+
+    /* Chart Colors */
+    --chart-1: 217.2 91.2% 59.8%;
+    --chart-2: 188.7 94.5% 42.7%;
+    --chart-3: 142.1 76.2% 36.3%;
+    --chart-4: 47.9 95.8% 53.1%;
+    --chart-5: 0 84.2% 60.2%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217.2 91.2% 59.8%), hsl(188.7 94.5% 42.7%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 84.2% 60.2%), hsl(24.6 95% 53.1%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 20px hsl(217.2 91.2% 59.8% / 0.3);
+    --shadow-card: 0 4px 6px -1px hsl(0 0% 0% / 0.3), 0 2px 4px -2px hsl(0 0% 0% / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 222.2 47% 5%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217.2 91.2% 59.8%;
+    --sidebar-primary-foreground: 222.2 47% 5%;
+    --sidebar-accent: 217 33% 15%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 18%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-lg;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent;
+  }
+}
+
+@layer utilities {
+  .text-mono {
+    font-family: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-danger {
+    background: var(--gradient-danger);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+}

@@ -1,0 +1,59 @@
+version: '3'
+
+services:
+  # N8n Service
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - GENERIC_TIMEZONE=Asia/Beirut
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=KratosS
+      - N8N_BASIC_AUTH_PASSWORD=t559PdghXnvP4jY
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=postgres
+      - DB_POSTGRESDB_PORT=5432
+      - DB_POSTGRESDB_DATABASE=n8ndb
+      - DB_POSTGRESDB_USER=n8nuser
+      - DB_POSTGRESDB_PASSWORD=mysecretpassword
+      - DB_POSTGRESDB_SSL=true
+      - DB_POSTGRESDB_SSL_MODE=require
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+      - ../DATASET:/home/node/dataset
+    depends_on:
+      - postgres
+    networks:
+      - n8n-network
+
+  # PostgreSQL Service
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=n8nuser
+      - POSTGRES_PASSWORD=mysecretpassword
+      - POSTGRES_DB=n8ndb
+    volumes:
+      - postgres-data:/var/lib/postgresql/data  # Persist data
+    ports:
+      - "5432:5432"
+    networks:
+      - n8n-network
+    restart: always
+
+# Networks for internal communication
+networks:
+  n8n-network:
+    driver: bridge
+
+# Volumes for persisting data
+volumes:
+  postgres-data:
+
